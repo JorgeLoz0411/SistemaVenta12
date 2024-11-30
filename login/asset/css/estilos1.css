@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+.fondo {
+  min-height: 100vh;
+}
+
+.boton {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 8px;
+  transition: 0.2s;
+  text-align: center; /* Centra el texto dentro del enlace */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  color: white;
+  border: 1px solid white;
+  margin-left: 30px;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 8px;
+  transition: 0.2s;
+  text-align: center; /* Centra el texto dentro del enlace */
+}
+
+.nav-link {
+  color: white;
+  border: 1px solid white;
+  margin-left: 15px;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.nav-link:hover {
+  border: 1px solid aqua;
+  color: aqua;
+}
+/* Estilo para la etiqueta del formulario */
+.form-label {
+  display: block; /* Asegura que la etiqueta ocupe toda la línea */
+  width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+  max-width: 200px; /* Establece un ancho máximo */
+  font-weight: bold; /* Opcional: hace que el texto sea negrita */
+  margin-bottom: 5px; /* Espaciado inferior */
+}
+.fondo-login {
+  background-color: black;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+.login {
+  color: white;
+  margin: auto;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: rgb(51, 47, 47);
+}
+.icon,
+.titulo {
+  text-align: center;
+  color: white;
+}
+.titulo {
+  margin-bottom: 12px;
+}
+.icon .car-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.box-eye {
+  position: relative;
+}
+.box-eye button {
+  border: none;
+  position: absolute;
+}
+.changePassword {
+  position: absolute;
+  top: 15px;
+  left: 180px;
+  color: rgb(51, 47, 47);
+  cursor: pointer;
+}
+
+.fa-eye-slash {
+  color: rgb(51, 47, 47) !important;
+}
+
+/* Estilos generales para la sección del equipo */
+#team {
+  background-image: url("/login/asset/img/fondo.avif");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 110vh;
+  max-width: 100%;
+  margin: auto;
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor principal */
+#team .container {
+  text-align: center;
+}
+
+/* Encabezados */
+#team .section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+#team .section-subheading {
+  font-size: 1.25rem;
+  color: white; /* Cambiar color a blanco */
+  margin-bottom: 4rem;
+}
+
+/* Miembro del equipo */
+.team-member {
+  margin-bottom: 4rem;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  border: 5px solid #000000; /* Borde negro */
+}
+
+.team-member h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: white; /* Cambiar color a blanco */
+  margin-bottom: 1rem;
+}
+
+/* Botones sociales */
+.btn-social {
+  font-size: 1.25rem;
+  margin: 0 0.5rem;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  outline: 2px solid aqua;
+  /* Cambia el color del borde a aqua */
+  outline-offset: 2px;
+  /* Ajusta la distancia del borde */
+}
+
+.btn-social:hover {
+  background-color: #555;
+}
+
+/* Centrar las imágenes */
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.col-lg-3,
+.col-md-6 {
+  display: flex;
+  justify-content: center;
+}
+/* Cambiar el color de texto de la clase text-muted a blanco */
+.text-muted {
+  color: white !important;
+}
+
+/* Estilos generales para la sección del formulario de contacto */
+#contactForm {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los inputs y textarea */
+#contactForm .form-control {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s;
+}
+
+#contactForm .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos para los mensajes de error */
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 0.875rem;
+}
+
+/* Estilos para los mensajes de éxito y error */
+#submitSuccessMessage,
+#submitErrorMessage {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#submitSuccessMessage {
+  background-color: #28a745;
+  color: white;
+}
+
+#submitErrorMessage {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Estilos para el botón de envío */
+#submitButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  transition: background-color 0.3s;
+}
+
+#submitButton:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el contenedor de la sección */
+#team {
+  background-image: url("/login/asset/img/fondo.avif");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 110vh;
+  max-width: 100%;
+  margin: auto;
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para el contenedor principal */
+#team .container {
+  text-align: center;
+}
+
+/* Estilos para los encabezados */
+#team .section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+#team .section-subheading {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+/* Estilos para centrar las imágenes */
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.col-lg-3,
+.col-md-6 {
+  display: flex;
+  justify-content: center;
+}
+
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  width: 95%;
+  padding-top: 50%; /* 16:9 Aspect Ratio */
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* Estilos para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  background-color: #ffffff;
+}
+
+/* Estilos para los inputs y textarea */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.form-control:focus {
+  border-color: blue;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Estilo para el botón */
+.btn-primary {
+  background-color: #007bff; /* Color de fondo azul */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  color: #ffffff; /* Color del texto blanco */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-size: 16px; /* Tamaño de la fuente */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el cursor */
+}
+
+.btn-primary:active {
+  background-color: #004494; /* Color de fondo al hacer clic */
+}
+
+.btn-primary:disabled {
+  background-color: #cccccc; /* Color de fondo cuando está deshabilitado */
+  cursor: not-allowed; /* Cursor no permitido cuando está deshabilitado */
+}
+
+/
+
+/* Estilos para los mensajes de éxito y error */
+#submitSuccessMessage,
+#submitErrorMessage {
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#submitSuccessMessage {
+  color: #28a745;
+}
+
+#submitErrorMessage {
+  color: #dc3545;
+}

@@ -1,0 +1,197 @@
+body {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura de la ventana gráfica para centrar verticalmente */
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 80vh; /* Altura del contenedor */
+    font-family: 'Times New Roman', Times, serif;
+    width: 70%;
+    padding: 25px;
+    color: #fff;
+    border: 2px solid black; /* Borde negro */
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 0 auto; /* Centrar el contenedor */
+    background-image: url('/sistemaventa12/login/asset/img/camiones.jpg'); /* Ruta de tu imagen */
+    background-size: cover; /* Ajustar el tamaño de la imagen */
+    background-position: center; /* Centrar la imagen */
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    width: 80%;
+    background: blue;
+    padding: 5px;
+    color: #fff;
+    border: 2px solid black; /* Borde negro */
+    cursor: pointer;
+    border-radius: 12px;
+    text-align: center; /* Centrar el texto */
+    margin: 0 auto;
+    margin-top: 5px; /* Bajar un poco desde el borde superior */
+}
+
+#container form {
+    background: rgba(255, 255, 255, 0.29); /* Fondo blanco con transparencia */
+    width: 40%; 
+    height: 100%; 
+    padding: 5px; 
+    border-radius: 15px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; /* Centrar el contenido del formulario verticalmente */
+    align-items: center; /* Centrar el contenido del formulario horizontalmente */
+}
+
+#container form .user-container {
+    position: relative;
+    width: 80%;
+    margin: 10px auto; /* Ajuste del margen inferior */
+    padding: 5px; /* Espacio interno */
+    border: 2px solid black; /* Contorno negro */
+    border-radius: 12px; /* Bordes redondeados */
+    display: flex;
+    align-items: center;
+}
+
+#container form .user-container input.form-control {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    width: 100%;
+    border: none; /* Sin borde interno */
+    outline: none; /* Sin contorno al hacer clic */
+    border-radius: 12px; /* Bordes redondeados */
+    padding-right: 40px; /* Espacio para el icono */
+}
+
+#container form .password-container {
+    position: relative;
+    width: 80%;
+    margin: 10px auto; /* Ajuste del margen */
+    border: 2px solid black; /* Contorno negro */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 5px; /* Espacio interno */
+    display: flex;
+    align-items: center;
+    
+}
+
+#container form .password-container input.form-control {
+    width: 100%;
+    border: none; /* Sin borde interno */
+    outline: none; /* Sin contorno al hacer clic */
+    padding-right: 40px; /* Espacio para el icono */
+    border-radius: 12px; /* Bordes redondeados */
+}
+
+#container form .password-container .fa-eye,
+#container form .password-container .fa-eye-slash {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: black;
+}
+
+#container form .password-container .fa-eye:hover,
+#container form .password-container .fa-eye-slash:hover {
+    color: #333;
+}
+
+#container form .alert {
+    margin: 20px 0; /* Separación vertical */
+    display: none; /* Oculto por defecto */
+    font-family: 'Times New Roman', serif; 
+    font-size: 12pt; 
+    text-align: center; 
+    color: black; 
+    background-color: white; /* Contenedor blanco */ 
+    border: 2px solid black; /* Borde negro */ 
+    padding: 10px; /* Espacio interno para una mejor apariencia */ 
+    border-radius: 12px; /* Bordes redondeados */
+}
+
+#container form input[type="submit"] {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    width: 80%;
+    background: blue;
+    padding: 5px;
+    color: #fff;
+    border: 10;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid black; /* Borde negro */
+    transition: background-color 0.3s ease; /* Transición para hover */
+    margin-top: 20px; /* Separación vertical */
+}
+
+#container form input[type="submit"]:hover {
+    background-color: darkblue; /* Cambia el color de fondo al pasar el ratón */
+    color: #fff; /* Asegura que el texto permanezca visible */
+    border-color: darkblue; /* Cambia el color del borde */
+}
+
+#container form img {
+    margin: 1px auto;
+    text-align: center;
+    display: block; 
+    height: 150px;
+    width: 150px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espaciar los botones */
+    align-items: center; /* Alinear verticalmente los botones */
+    margin-top: 20px; /* Espacio en la parte superior */
+}
+
+.button-container a {
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    color: #fff;
+    background-color: blue; /* Fondo azul */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 15px; /* Bordes redondeados */
+    border: 2px solid black; /* Borde negro */
+    transition: background-color 0.3s ease; /* Transición para hover */
+}
+
+.button-container a:hover {
+    background-color: darkblue; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.button-container .google-login-btn {
+    background-color: red; /* Color de fondo específico para el botón de Google */
+    border: 2px solid darkred; /* Borde específico para el botón de Google */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+.button-container .google-login-btn:hover {
+    background-color: darkred; /* Cambia el color de fondo al pasar el ratón */
+}
+
+@media screen and (max-width: 460px) {
+    #container form {
+        width: 90%;
+    }
+}
+
+
+
+

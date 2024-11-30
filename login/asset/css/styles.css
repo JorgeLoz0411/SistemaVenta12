@@ -1,0 +1,38 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0; /* Asegúrate de que el cuerpo no tenga margen */
+  overflow: hidden; /* Ocultar desbordamiento */
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 30px; /* Corregir el padding */
+  background-image: url('/sistemaventa12/login/asset/img/camiones01.jpg'); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* O cualquier altura deseada */
+  color: white; /* Asegúrate de que el texto sea legible sobre la imagen */
+}
+
+.header .content {
+  padding: 20px;
+}
+
+.navbar-toggler {
+  position: relative;
+}
+
+.navbar-toggler::after {
+  content: '\25BC'; /* Código Unicode para una flecha hacia abajo */
+  position: absolute;
+  right: 10px; /* Ajusta la posición según sea necesario */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em; /* Ajusta el tamaño de la flecha */
+}
+
+
+
